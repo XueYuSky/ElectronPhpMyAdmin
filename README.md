@@ -22,4 +22,10 @@ Just run install.bat
 
 ## How to run it
 
+### On Linux
+
 `npm start`
+
+### On Windows
+
+Just run run.bat
