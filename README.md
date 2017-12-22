@@ -8,9 +8,11 @@ This application is based on Electron. Electron creates a Http server by Gulp-Se
 
 ## How install
 
-`npm install`
-`cd phpmyadmin`
-`composer require`
+```bash
+npm install
+cd phpmyadmin
+composer require
+```
 
 ## How execute
 
