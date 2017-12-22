@@ -8,11 +8,17 @@ This application is based on Electron. Electron creates a Http server by Gulp-Se
 
 ## How to install
 
+### On Linux
+
 ```bash
 npm install
 cd phpmyadmin
 composer require
 ```
+
+### On Windows
+
+Just run install.bat
 
 ## How to run it
 
