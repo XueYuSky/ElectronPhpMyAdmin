@@ -29,3 +29,7 @@ Just run install.bat
 ### On Windows
 
 Just run run.bat
+
+## How to configure
+
+Modify this file phpmyadmin/config.inc.php
