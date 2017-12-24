@@ -6,4 +6,3 @@ pause
 echo The application is installed
 cd..
 npm start
-pause
