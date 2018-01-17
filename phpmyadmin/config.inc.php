@@ -37,7 +37,7 @@ $cfg['Servers'][$i]['compress'] = false;
 $cfg['Servers'][$i]['extension'] = 'mysqli';
 $cfg['Servers'][$i]['AllowNoPassword'] = true;
 $cfg['Servers'][$i]['hide_db'] = '(mysql|information_schema|performance_schema|test|phpmyadmin)';
-echo "test";
+
 /*
  * phpMyAdmin configuration storage settings.
  */

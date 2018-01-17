@@ -12,7 +12,6 @@ var connect = require('gulp-connect-php');
 connect.server({
   root: './phpmyadmin',
   base: './phpmyadmin',
-  host: 'http://localhost',
   port: 9999,
   livereload: true
 });
