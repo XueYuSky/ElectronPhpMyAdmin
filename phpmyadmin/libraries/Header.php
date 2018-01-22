@@ -148,6 +148,7 @@ class Header
     private function _addDefaultScripts()
     {
         // Localised strings
+        $this->_scripts->addFile('fix_module_before.js');
         $this->_scripts->addFile('jquery/jquery.min.js');
         $this->_scripts->addFile('jquery/jquery-migrate-3.0.0.js');
         $this->_scripts->addFile('whitelist.php');
@@ -161,6 +162,7 @@ class Header
         $this->_scripts->addFile('jquery/jquery-ui-timepicker-addon.js');
         $this->_scripts->addFile('jquery/jquery.ba-hashchange-1.3.js');
         $this->_scripts->addFile('jquery/jquery.debounce-1.0.5.js');
+        $this->_scripts->addFile('fix_module_after.js');
         $this->_scripts->addFile('menu-resizer.js');
 
         // Cross-framing protection
@@ -800,4 +802,3 @@ class Header
         return "v=" . urlencode(PMA_VERSION);
     }
 }
-
