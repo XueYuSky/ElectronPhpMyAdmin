@@ -13,13 +13,11 @@
   ],
   "author": "GitHub",
   "license": "CC0-1.0",
-  "devDependencies": {
-    "electron": "~1.7.8",
-    "gulp-connect-php": "^1.0.1"
-  },
   "dependencies": {
     "connect": "^3.6.5",
+    "electron": "~2.0.1",
     "gulp": "^3.9.1",
-    "gulp-connect": "^5.0.0"
+    "gulp-connect": "^5.0.0",
+    "gulp-connect-php": "^1.0.1"
   }
 }
