@@ -4,7 +4,12 @@
   "description": "PhpMyAdmin on local Application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dev": "electron . --debug",
+    "package": "npm-run-all package:*",
+    "package:mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --out=out --icon=assets/app-icon/mac/app.icns --osx-sign.identity='Developer ID Application: GitHub' --extend-info=assets/mac/info.plist",
+    "package:win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --out=out --icon=assets/app-icon/win/app.ico",
+    "package:linux": "electron-packager . --overwrite --platform=linux --arch=x64 --out=out"
   },
   "repository": "https://github.com/SalvaCrea/ElectronPhpMyAdmin",
   "keywords": [
@@ -13,9 +18,13 @@
   ],
   "author": "GitHub",
   "license": "CC0-1.0",
+  "devDependencies": {
+      "electron": "^2.0.0",
+      "electron-packager": "^8.6.0",
+      "electron-winstaller": "^2.2.0"
+    },
   "dependencies": {
     "connect": "^3.6.5",
-    "electron": "~2.0.1",
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
     "gulp-connect-php": "^1.0.1"
